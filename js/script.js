@@ -100,6 +100,7 @@ function createCard(nome, ruolo, foto) {
     const card = document.createElement('div');
     card.classList.add('card');
     card.classList.add('col-4');
+    card.classList.add('my-3');
 
     // Creo l'elemento immagine
     const imgElem = createImgElement(foto);
