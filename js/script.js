@@ -48,9 +48,29 @@ const teamMembers = [
 
 // MILESTONE 1:
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+// for (let i = 0; i < teamMembers.length; i++) {
+//     const thisTeam = teamMembers[i];
+//     console.log(`Nome: ` + thisTeam.name)
+//     console.log(`Ruolo: ` + thisTeam.role)
+//     console.log(`Immagine: ` + thisTeam.image)
+// }
+
+
+
+// MILESTONE 2:
+// Stampare le stesse informazioni su DOM sottoforma di stringhe
+
+// Seleziono la mia ul tramite id
+const ourMembers = document.querySelector(`#our-members`);
+
 for (let i = 0; i < teamMembers.length; i++) {
     const thisTeam = teamMembers[i];
-    console.log(`Nome: ` + thisTeam.name)
-    console.log(`Ruolo: ` + thisTeam.role)
-    console.log(`Immagine: ` + thisTeam.image)
+    const domLI = members(thisTeam.name, thisTeam.role, thisTeam.image);
+}
+
+// Creo una funzione per stampare su dom le informazioni
+function members(teamName, teamRole, teamImage) {
+    const newLi = document.createElement('li');
+    newLi.textContent = `Nome: ${teamName}, Ruolo: ${teamRole}, Immagine: ${teamImage}`;
+    ourMembers.appendChild(newLi);
 }
