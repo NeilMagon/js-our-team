@@ -76,7 +76,6 @@ const teamMembers = [
 // }
 
 
-
 // BONUS 1:
 // Trasformare la stringa foto in una immagine effettiva
 function createImgElement(src){
@@ -87,10 +86,8 @@ function createImgElement(src){
 // BONUS 2:
 // Organizzare i singoli membri in card/schede
 const cardContainer = document.querySelector('#card-container');
-const cardImg = document.querySelector('#card-img');
-const cardInfo = document.querySelector('#card-info');
 
-// Ciclo attraverso i membri del team e creazione delle schede per ciascuno di essi
+// Ciclo e creazione delle schede per ciascuno di essi
 for (let i = 0; i < teamMembers.length; i++) {
     const thisTeam = teamMembers[i];
     const card = createCard(thisTeam.name, thisTeam.role, thisTeam.image);
