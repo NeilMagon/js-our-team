@@ -11,36 +11,46 @@
 // BONUS 2:
 // Organizzare i singoli membri in card/schede
 
-// Creo l'array di oggetti per il team
+// MILESTONE 0:
+// Creare l’array di oggetti con le informazioni fornite.
 const teamMembers = [
     {
         name: `Wayne Barnett`,
         role: `Founder & CEO`,    
-        Image: `img/wayne-barnett-founder-ceo.jpg`,
+        image: `img/wayne-barnett-founder-ceo.jpg`,
     },
     {
         name: `Angela Caroll`,
         role: `Chief Editor`,    
-        Image:`img/angela-caroll-chief-editor.jpg`,
+        image:`img/angela-caroll-chief-editor.jpg`,
     },
     {
         name: `Walter Gordon`,
         role: `Office Manager`,    
-        Image: `img/walter-gordon-office-manager.jpg`,
+        image: `img/walter-gordon-office-manager.jpg`,
     },
     {
         name: `Angela Lopez`,
         role: `Social Media Manager`,    
-        Image: `img/angela-lopez-social-media-manager.jpg`,
+        image: `img/angela-lopez-social-media-manager.jpg`,
     },
     {
         name: `Scott Estrada`,
         role: `Developer`,    
-        Image: `img/scott-estrada-developer.jpg`,
+        image: `img/scott-estrada-developer.jpg`,
     },
     {
         name: `Barbara Ramos`,
         role: `Graphic Designer`,    
-        Image: `img/barbara-ramos-graphic-designer.jpg`,
+        image: `img/barbara-ramos-graphic-designer.jpg`,
     }
 ]
+
+// MILESTONE 1:
+// Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+for (let i = 0; i < teamMembers.length; i++) {
+    const thisTeam = teamMembers[i];
+    console.log(`Nome: ` + thisTeam.name)
+    console.log(`Ruolo: ` + thisTeam.role)
+    console.log(`Immagine: ` + thisTeam.image)
+}
