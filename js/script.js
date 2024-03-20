@@ -133,12 +133,7 @@ function createCard(nome, ruolo, foto) {
     return card;
 }
 
-// Funzione per creare l'elemento immagine
-function createImgElement(src){
-    const imgElem = document.createElement(`img`);
-    imgElem.setAttribute(`src`, src);
-    return imgElem;
-}
+
 
 
 
