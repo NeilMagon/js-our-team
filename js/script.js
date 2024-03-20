@@ -79,5 +79,18 @@ const teamMembers = [
 
 // BONUS 1:
 // Trasformare la stringa foto in una immagine effettiva
+function createImgElement(src){
+    const imgElem = document.createElement(`img`);
+    imgElem.setAttribute(`src`, src);
+    return imgElem;
+}
 // BONUS 2:
 // Organizzare i singoli membri in card/schede
+const cardContainer = document.querySelector('#card-container');
+const cardImg = document.querySelector('#card-img');
+const cardInfo = document.querySelector('#card-info');
+
+
+
+
+
