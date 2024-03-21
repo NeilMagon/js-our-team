@@ -85,7 +85,7 @@ const cardContainer = document.querySelector('#card-container');
 for (let i = 0; i < teamMembers.length; i++) {
     const thisTeam = teamMembers[i];
     const newElement = `
-        <div class="card col-4 my-3">
+        <div class="card col-6 col-md-4 my-3">
             <div clsdd="card-body">
                 <div class="card-img">
                     <img src="${thisTeam.image}" alt="">
